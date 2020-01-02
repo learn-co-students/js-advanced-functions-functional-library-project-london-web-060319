@@ -15,7 +15,7 @@ const fi = (function() {
 
       return collection;
     },
-
+    //map iteration
     map: function(collection, iteratee) {
       if (!(collection instanceof Array))
         collection = Object.values(collection);
@@ -43,7 +43,7 @@ const fi = (function() {
       }
       return acc;
     },
-
+    //using find
     find: function(collection, predicate) {
       if (!(collection instanceof Array))
         collection = Object.values(collection);
